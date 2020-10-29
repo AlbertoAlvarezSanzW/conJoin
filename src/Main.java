@@ -8,7 +8,9 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Cliente cliente = new Cliente();
         Camarero camarero = new Camarero();
-        // Es importante que empiece el camarero ya que se queda esperando.
+
+
+
         cliente.start();
         camarero.start();
         cliente.join();
